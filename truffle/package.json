@@ -1,0 +1,16 @@
+{
+  "name": "truffle",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "truffle-config.js",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.10",
+    "dotenv": "^16.0.1"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

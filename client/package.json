@@ -1,0 +1,99 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "patch-package": "patch-package",
+    "nodeify": "rn-nodeify --install crypto,http,https,os,assert,url,stream,events --hack --yarn",
+    "postinstall": "run-p nodeify patch-package"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.7",
+    "@tradle/react-native-http": "^2.0.0",
+    "@walletconnect/react-native-dapp": "^1.7.8",
+    "@walletconnect/web3-provider": "^1.7.8",
+    "assert": "^1.1.1",
+    "events": "^1.0.0",
+    "https-browserify": "~0.0.0",
+    "react": "18.0.0",
+    "react-async-hook": "^4.0.0",
+    "react-native": "0.69.1",
+    "react-native-crypto": "^2.1.0",
+    "react-native-dotenv": "^3.3.1",
+    "react-native-os": "^1.0.1",
+    "react-native-randombytes": "^3.0.0",
+    "react-native-svg": "^12.3.0",
+    "readable-stream": "1.0.33",
+    "stream-browserify": "^1.0.0",
+    "url": "~0.10.1",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@tsconfig/react-native": "^2.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.69.1",
+    "@types/react-native-dotenv": "^0.2.0",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/web3": "^1.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.32.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.70.3",
+    "node-libs-browser": "^2.2.1",
+    "npm-run-all": "^4.1.5",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
+    "react-test-renderer": "18.0.0",
+    "rn-nodeify": "^10.3.0",
+    "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "@types/react": "^18",
+    "react-native-svg": "^12.3.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "react-native": {
+    "crypto": "react-native-crypto",
+    "http": "@tradle/react-native-http",
+    "https": "https-browserify",
+    "os": "react-native-os",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
+  },
+  "browser": {
+    "crypto": "react-native-crypto",
+    "http": "@tradle/react-native-http",
+    "https": "https-browserify",
+    "os": "react-native-os",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
+  }
+}

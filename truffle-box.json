@@ -1,0 +1,15 @@
+{
+  "ignore": [".gitignore", "README.md"],
+  "commands": {
+    "Contracts: Compile": "cd truffle && truffle compile",
+    "Contracts: Test": "cd truffle && truffle test",
+    "Contracts: Migrate": "cd truffle && truffle migrate",
+    "Dapp: Run dev server": "cd client && yarn start",
+    "Dapp: Test": "cd client && yarn test",
+    "Dapp: Run android": "cd client && yarn android",
+    "Dapp: Run ios": "cd client && yarn ios"
+  },
+  "hooks": {
+    "post-unpack": ""
+  }
+}
